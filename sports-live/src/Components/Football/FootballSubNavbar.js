@@ -12,9 +12,9 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { Link } from "react-router-dom";
 
-const pages = ["LiveScore", "Rankings", "Series", "Gallery", "News", "Teams"];
+const pages = ["LiveScore", "Rankings", "Series", "Gallery", "News"];
 
-const CricketSubNavbar = () => {
+const FootballSubNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -61,7 +61,7 @@ const CricketSubNavbar = () => {
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
                   <Link
-                    to={`/Cricket`}
+                    to={`/Football`}
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     Info
@@ -72,7 +72,7 @@ const CricketSubNavbar = () => {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     <Link
-                      to={`/Cricket/${page}`}
+                      to={`/Football/${page}`}
                       style={{ textDecoration: "none", color: "black" }}
                     >
                       {page}
@@ -90,7 +90,7 @@ const CricketSubNavbar = () => {
             }}
           >
             <Link
-              to={`/Cricket`}
+              to={`/Football`}
               style={{ textDecoration: "none", color: "white" }}
             >
               <Button
@@ -107,7 +107,7 @@ const CricketSubNavbar = () => {
             </Link>
             {pages.map((page) => (
               <Link
-                to={`/Cricket/${page}`}
+                to={`/Football/${page}`}
                 style={{ textDecoration: "none", color: "white" }}
                 key={page}
               >
@@ -130,4 +130,4 @@ const CricketSubNavbar = () => {
     </AppBar>
   );
 };
-export default CricketSubNavbar;
+export default FootballSubNavbar;

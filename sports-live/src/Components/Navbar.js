@@ -123,11 +123,11 @@ const Navbar = () => {
           >
             {pages.map((page) => (
               <Link
+                key={page}
                 to={`/${page}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <Button
-                  key={page}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, mx: 2, color: "white", display: "block" }}
                   variant="contained"
