@@ -96,7 +96,7 @@ const CricketSubNavbar = () => {
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{
-                  my: 2,
+                  my: 0,
                   color: "white",
                   display: "block",
                 }}
@@ -114,7 +114,7 @@ const CricketSubNavbar = () => {
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
+                    my: 0,
                     color: "white",
                     display: "block",
                   }}
